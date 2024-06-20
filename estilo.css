@@ -163,10 +163,45 @@ body, html {
         align-items: center;
        
     }
-
+    .background-slider{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
     .background-slider h2{
+        position: absolute;
+        top: 15%;
+        left: 15;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        color: white;
+        z-index: 1; /* Garante que o texto fique acima das imagens */
+        font-weight: 400;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.445);
+        font-size: 7vw;
+    }
 
-        font-size: xx-large;
+
+    
+    .btn{
+        width: 60%;
+        text-align: center;
+        margin: 5% 0;
+        color: white;
+        font-weight: 400;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.445);
+        box-shadow: -1px -1px 20px #5AAD26;
+        border-radius: 10px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        background: linear-gradient(to bottom, #5AAD26, #0C1E0D);
+        padding: 2%;
+        cursor: pointer;
+        
     }
    
     .areaburguer{
