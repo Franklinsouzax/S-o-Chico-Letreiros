@@ -98,8 +98,8 @@ body, html {
 .btn{
     position: absolute;
     top: 70%;
-    left: 24%;
-    width: 50%;
+    left: 19%;
+    width: 60%;
     text-align: center;
     margin: 0;
     color: white;
@@ -113,13 +113,13 @@ body, html {
     align-items: center;
     text-decoration: none;
     background: linear-gradient(to bottom, #5AAD26, #0C1E0D);
-    padding: 1%;
+    padding: 2%;
     cursor: pointer;
     
 }
 
 .btn-2{
-    width: 50%;
+    width: 60%;
     text-align: center;
     margin: 5% 0;
     color: white;
@@ -132,7 +132,7 @@ body, html {
     align-items: center;
     text-decoration: none;
     background: linear-gradient(to bottom, #5AAD26, #0C1E0D);
-    padding: 1%;
+    padding: 2%;
     cursor: pointer;
     
 }
@@ -164,6 +164,10 @@ body, html {
        
     }
 
+    .background-slider h2{
+
+        font-size: xx-large;
+    }
    
     .areaburguer{
         width: 10%;
@@ -188,14 +192,14 @@ body, html {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        flex-direction: column;        
     }
    
     .menu-burguer a{
         color: #212121;
         text-decoration: none;
         font-size:large;
-        padding: 1% 0;
+        padding: 2% 0;
     }
 
 }
