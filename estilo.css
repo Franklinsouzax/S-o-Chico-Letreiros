@@ -1,0 +1,347 @@
+/* Estilos Gerais */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+:root{
+
+    --preto-padrao: #0E0D0D;
+    --rosa-font:#D47ECC;
+    --rodape:#131313;
+
+}
+
+/* CARROSSEL */
+.topo {
+    position: relative;
+    width: 100%;
+    background-color: #ccc; /* Cor de fundo para visualização */
+    overflow: hidden; /* Para ocultar conteúdo além das bordas */
+}
+.topo {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Altura total da viewport */
+    background-color: #ccc; /* Cor de fundo para visualização */
+    overflow: hidden; /* Oculta conteúdo além das bordas */
+}
+
+.container-slider {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Ocupa toda a altura da .topo */
+}
+
+.background-slider {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Ocupa toda a altura da .topo */
+    overflow: hidden; /* Oculta conteúdo além das bordas */
+}
+
+.background-slider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto levemente opaco */
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.719); /* Fundo preto levemente opaco */
+    z-index: 1; /* Coloca o fundo sobre as imagens */
+}
+
+.slider {
+    display: flex;
+    width: auto;
+    height: 100%; 
+    max-height: 80vh;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem ao tamanho do contêiner */
+}
+
+.background-slider h2 {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: white;
+    z-index: 1; /* Garante que o texto fique acima das imagens */
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.445);
+    font-size: xx-large;
+}
+.background-slider span{
+
+    color: var(--rosa-font) ;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.445);
+}
+
+.btn{
+    position: absolute;
+    top: 70%;
+    left: 24%;
+    width: 50%;
+    text-align: center;
+    margin: 0;
+    color: white;
+    z-index: 1; /* Garante que o texto fique acima das imagens */
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.445);
+    box-shadow: -1px -1px 20px #5AAD26;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: linear-gradient(to bottom, #5AAD26, #0C1E0D);
+    padding: 1%;
+    cursor: pointer;
+    
+}
+
+.btn-2{
+    width: 50%;
+    text-align: center;
+    margin: 5% 0;
+    color: white;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.445);
+    box-shadow: -1px -1px 20px #5AAD26;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: linear-gradient(to bottom, #5AAD26, #0C1E0D);
+    padding: 1%;
+    cursor: pointer;
+    
+}
+
+.como-funciona{
+    
+    background-color: var(--preto-padrao);
+   
+}
+.como-funciona h2{
+
+    color: var(--rosa-font);
+    text-transform: uppercase;    
+}
+
+.quem-somos{
+   
+}
+
+@media (max-width: 767px) {
+
+    /* barra de navegação */
+    
+    .mobile{
+        background-color: var(--preto-padrao);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+
+   
+    .areaburguer{
+        width: 10%;
+        margin: 1%;
+        cursor: pointer;
+    }
+    .barra{
+        height: .5rem;
+        margin: .2rem;
+        background-color: rgb(255, 255, 255);
+    }
+    .desktop{
+        display: none;
+    }
+    .menu-burguer{
+        display: flex;
+        flex-direction: column;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.363);
+    }
+
+    .menu-burguer li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+   
+    .menu-burguer a{
+        color: #212121;
+        text-decoration: none;
+        font-size:large;
+        padding: 1% 0;
+    }
+
+}
+.como-funciona .title{
+    font-size: x-large;
+    font-weight: 700;
+    color: var(--rosa-font);
+    text-transform: uppercase;
+}
+.como-funciona{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.como-funciona .area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.como-funciona img{
+
+    background-color: var(--rosa-font);
+    margin: 5%;
+    border-radius: 120px;
+    background-size: contain;
+    padding: 5%;
+    width: 4rem;   
+}
+
+.como-funciona h2  {
+    
+    width: 60%;
+    color: white;
+    font-size: medium;
+    text-align: center;
+    text-transform: none;
+    font-weight: 450;
+}
+
+.como-funciona p{
+    
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    font-size: small;
+    padding-bottom: 6%;
+}
+
+.end{
+    padding-bottom: 1rem;
+}
+
+            /*  QUEM SOMOS */
+
+.quem-somos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quem-somos h2{
+    padding: 0 3%;
+    border-bottom: 2px solid var(--rosa-font);
+}
+.quem-somos p{
+    padding-bottom: 4rem;
+    text-align: start;
+    width: 80%;
+    font-size: small;
+}
+
+            /* COMO FUNCIONA */
+
+.como-funciona{
+  
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.como-funciona h2{
+    color: var(--rosa-font);
+    font-size: x-large;
+    font-weight: 450;
+}
+
+.slider-2 img{
+    display: flex;
+}
+
+        /* SERVIÇOS */
+
+        .servicos {
+            background-image: url(/src/imagens/bg-black.png);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .servicos h2{
+            color: var(--rosa-font);
+            font-size: x-large;
+            
+        }
+        .content-slider-2 {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch; 
+            margin-top: 20px; 
+        }
+        
+        .slider-2 {
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 10%;
+            
+        }
+        
+        .slider-2 img {
+            margin: 10px; 
+            max-width: 100%; 
+            height: auto; 
+        }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--rodape);
+        height: 10vh;
+    }
+
+    footer p{
+        color: white;
+        text-align: center;
+        font-size: small;
+        font-weight: 100;
+        width: 80%;
+    }

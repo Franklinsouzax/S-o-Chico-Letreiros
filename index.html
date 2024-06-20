@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- estilo -->
+   
+   <link rel="stylesheet" href="/estilo.css">
+   
+    <title>São Chico Letreiros</title>
+    <link rel="icon" type="image/png" href="/src/logo/logo-cut.png">
+
+</head>
+<body>
+    <header>
+        <!-- BARRA DE NAVEGAÇÃO MOBILE -->
+
+        <div class="menu-burguer">
+           <nav class="mobile">
+            <li>
+                <a href=""><img style="width: 60%; padding-top: 1%; padding-left: 3%;" src="/src/logo/logo-vertical.png" alt=""></a>
+            </li>
+            <div onclick="toggleMenu()" class="areaburguer" >
+                <div class="barra"></div>
+                <div class="barra"></div>
+                <div class="barra"></div>
+            </div>
+           </nav>
+           <li style="display: none;" id="links">
+                <a href="#quem-somos">Quem Somos</a>
+                <a href="#como-funciona">Como funciona</a>
+                <a href="#servicos"> Trabalhos</a>
+            </li>
+            <script src="/menu.js"></script>
+        </div>
+        
+        <!-- BARRA DE NAVEGAÇÃO DESKTOP -->
+        <nav class="desktop">
+            <ul>
+                <li>
+
+                </li>
+                <li>
+                    <a href="#quem-somos">Quem Somos</a>
+                    <a href="#como-funciona">Como funciona</a>
+                    <a href="#servicos"> Trabalhos</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section class="topo">
+                    <div class="container-slider">
+                       <div class="background-slider">
+                        <div class="background"></div>
+                        <div class="slider">
+                            <img src="/src/imagens/image-1.jpeg" alt="">
+                            <img src="/src/imagens/image-2.jpg" alt="">
+                            <img src="/src/imagens/image-3.jpg" alt="">
+                        </div>
+                        <h2>
+                           <span>Transforme</span> seu ambiente com <span>profissionalismo</span> e <span>sofisticação</span></h2>
+                            <a class="btn" href="#"> faça o seu orçamento</a>
+                        </div>
+                    </div>
+                  <script src="/carrossel.js"></script>
+            </section>
+            <section id="como-funciona" class="como-funciona">
+                <h2 class="title">como funciona</h2>
+                <article class="area">
+                    <img src="/src//icons/envio.png" alt="logo-envio">
+                    <h2>
+                        Solicite seu Orçamento Personalizado
+                    </h2>
+                    <p>
+                        Nos informe a medida desejada para o projeto, o CEP de 
+                        entrega e envie a identidade visual da marca para 
+                        receber um orçamento personalizado.
+                    </p>
+                </article>
+                <article class="area">
+                    <img src="/src/icons/prazo.png" alt="logo-conograma">
+                    <h2>
+                        Início do Cronograma de Criação e Produção
+                    </h2>
+                    <p>
+                    Após fechado o projeto, é dado início ao cronograma de criação
+                    do layout e produção do produto. 
+                    </p>
+                </article>
+                <article class="area end">
+                    <img src="/src/icons/post-branco.png" alt="logo-entrega">
+                    <h2>
+                    Envio Seguro e Confortável
+                    </h2>
+                    <p>
+                    Os pedidos são entregues via sedex ou por transportadora 
+                    de nossa região, considerando as condições de tempo de 
+                    entrega e valores disponibilizados para o envio.
+                    </p>
+                </article>
+            </section>
+            <section id="quem-somos" class="quem-somos">
+                <h2>
+                    QUEM SOMOS
+                </h2>
+                <p class="end">
+                Dedicados em transformar ideias em realidade, a São Chico Corte
+                é especializada na produção de produtos personalizados em acrílico 
+                de alta qualidade, fabricamos desde chaveiros, placas de porta, 
+                placas de sinalização, plaquinhas qr code, até grandes placas e 
+                letreiros, (nosso foco seria ainda focar nos letreiros, 
+                caso ache interessante, pode tirar os outros produtos do texto) 
+                buscamos sempre por oferecer uma experiência única desde o 
+                atendimento inicial, nossos produtos visão não apenas a sofisticação 
+                e profissionalidade que proporcionam, mas também a funcionalidade 
+                e a praticidade, tanto os que demandam aplicação, quanto os de uso cotidiano.
+                </p>
+            </section>
+            <section id="servicos" class="servicos">
+                <h2>NOSSOS SERVIÇOS</h2>
+                <div class="content-slider-2">
+                    <div class="slider-2"> 
+                        <img  src="/src/trabalhos/foto1.png" alt="">
+                        <img src="/src/trabalhos/foto2.png" alt="">
+                        <img src="/src/trabalhos/foto3.png" alt="">
+                        <img src="/src/trabalhos/foto4.png" alt="">
+                        <img src="/src/trabalhos/foto5.png" alt="">
+                        <img src="/src/trabalhos/foto6.png" alt="">
+                    </div>
+                </div>
+                <a class="btn-2" href="#"> faça o seu orçamento</a>
+            </section>
+            <script src="slider-2.js"></script>
+        </main>
+        <footer>
+            <p class="rodape">
+                São Chico-Corte a Laser 2024 © - Todos os Direitos Reservados
+            </p>
+        </footer>
+    </header>
+</body>
+</html>
