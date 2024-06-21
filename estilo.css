@@ -640,8 +640,20 @@ footer p{
     }
    .xx-degrade{
     display: block;
-   
    }
+    .caixa-degrade{
+        background: linear-gradient(to bottom, #0E0D0D, #0E0D0D,  #70426c);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .caixa-degrade p{
+        color: white;
+        width: 95%;
+        text-align: center;
+    }
+
     
 
     @media (min-width: 770px){
@@ -737,8 +749,6 @@ footer p{
         }
         
         .caixa-degrade{
-            
-        
             background: linear-gradient(to bottom, #0E0D0D, #0E0D0D,  #70426c);
             display: flex;
             justify-content: center;
