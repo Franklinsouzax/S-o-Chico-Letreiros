@@ -16,20 +16,43 @@ body, html {
 }
 
 /* CARROSSEL */
+
 .topo {
-    position: relative;
+    /*position: relative;
     width: 100%;
-    background-color: #ccc; /* Cor de fundo para visualização */
-    overflow: hidden; /* Para ocultar conteúdo além das bordas */
-}
-.topo {
-    position: relative;
-    width: 100%;
-    height: 100%; /* Altura total da viewport */
-    background-color: #ccc; /* Cor de fundo para visualização */
-    overflow: hidden; /* Oculta conteúdo além das bordas */
+    height: 100%;  Altura total da viewport */
+    /* background-color: #ccc; Cor de fundo para visualização */
+    /* overflow: hidden; Oculta conteúdo além das bordas */
 }
 
+.topo{
+
+    width: 100%;
+    background-image: url(/src/imagens/topo.png);
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position:bottom  ;
+}
+.caixa-topo{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.topo h2{
+    padding-top: 5%;
+    text-align: center;
+    width: 90%;
+    color: #fff;
+    font-size: 5vw;
+}
+.topo span{
+    color: var(--rosa-font);
+}
 .container-slider {
     position: relative;
     width: 100%;
@@ -146,16 +169,13 @@ body, html {
     background: linear-gradient(to bottom, #5AAD26, #0C1E0D);
     padding: 2%;
     cursor: pointer;
-    
 }
 
 .como-funciona{
-    
     background-color: var(--preto-padrao);
-   
 }
-.como-funciona h2{
 
+.como-funciona h2{
     color: var(--rosa-font);
     text-transform: uppercase;    
 }
@@ -167,17 +187,15 @@ body, html {
     flex-direction: column;
     background-color: var(--preto-padrao);
     padding-bottom: 12vh;
-    
 }
 
 .perguntas h2{
     color: var(--rosa-font);
     border-bottom: 1px solid #D47ECC;
-    width: 25vw;
     padding: 1vw;
     align-self: self-start;
-   
-    
+    font-size: 4vw;
+
 }
 summary {
     display: flex;
@@ -186,8 +204,9 @@ summary {
     color: white;
     padding: 1vw;
     font-weight: 500;
-    font-size: 1.5vw;
-    border-bottom: 1px solid white; 
+    font-size: 4vw;
+    border-bottom: 1px solid white;
+    
    
 
 }
@@ -201,13 +220,53 @@ summary {
 
 .caixa-respostas p{
     padding: 4vh;
-    font-size: 1.3vw;
+    font-size: 3vw;
 }
 .caixa-perguntas{
     background-color: var(--preto-padrao);
     padding: 0;
     margin: 0;
     
+}
+
+.icon{
+    width: 1vw;
+}
+footer{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    
+    
+
+}
+.area-footer{
+    display: flex;
+    width: 80%;
+    
+
+}
+.footer-direito{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 50%;
+}
+.footer-esquerdo{
+    display: flex;
+    width: 50%;
+}
+footer p{
+    font-size: 5vw;
+    font-weight: 300;
+}
+.area-footer span{
+
+    font-weight: 500;
+    color: var(--rosa-font);
 }
 
 @media (max-width: 767px) {
@@ -241,8 +300,6 @@ summary {
         font-size: 7vw;
     }
 
-
-    
     .btn{
         width: 60%;
         text-align: center;
@@ -259,7 +316,6 @@ summary {
         background: linear-gradient(to bottom, #5AAD26, #0C1E0D);
         padding: 2%;
         cursor: pointer;
-        
     }
    
     .areaburguer{
@@ -392,6 +448,10 @@ summary {
     display: flex;
 }
 
+        .icon{
+            width: 3vw;
+        }
+
         /* SERVIÇOS */
 
         .servicos {
@@ -443,21 +503,87 @@ summary {
             z-index: 1;
         }
         
-        #prevBtn {
-            left: 10px;
-        }
-        
-        #nextBtn {
-            right: 10px;
-        }
     footer{
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: var(--rodape);
-        height: 10vh;
+       
     }
 
+            /* MODAL */
+
+            .content-modal{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+             .modal {
+                display: flex;
+                flex-direction: column; 
+                justify-content: flex-start; 
+                align-items: flex-end; /* Alinha os itens à direita */
+                overflow-y: auto; 
+                width: 11vw;
+                height: 65vh; /* Altura máxima do modal */
+                padding: 10px; /* Espaçamento interno */
+            }
+          
+            .display-modal{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100vw;
+              flex-direction: column;
+              
+            }
+            .modal{
+                display: flex;
+                
+                width: 92%;
+                flex-direction: row;
+                height: auto;
+            }
+            .modal img {
+                width: 30%; 
+                margin-left: 10px; 
+                cursor: pointer; 
+                
+            }
+            
+            .modal img:hover {
+                opacity: 0.5; 
+            }
+          
+            
+            .display {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+                height: 100%;
+            }
+            
+            /* Estilização do scroll */
+            .modal::-webkit-scrollbar {
+                width: 10px; /* Largura do scroll vertical */
+            }
+            
+            .modal::-webkit-scrollbar-track {
+                background-color: #333; /* Cor de fundo da barra de scroll */
+            }
+            
+            .modal::-webkit-scrollbar-thumb {
+                background-color: #ec8de3; /* Cor do thumb (o scroll em si) */
+                border-radius: 5px; /* Borda arredondada */
+            }
+            
+            .modal::-webkit-scrollbar-thumb:hover {
+                background-color: #b25ac4; /* Cor do thumb ao passar o mouse */
+            }
+
+            
     footer p{
         color: white;
         text-align: center;
@@ -588,11 +714,12 @@ summary {
                          /* MODAL */
                         .content-modal{
                             display: flex;
-                            flex-direction: column;
                             justify-content: center;
                             align-items: center;
+                        
                         }
                          .modal {
+                           
                             display: flex;
                             flex-direction: column; 
                             justify-content: flex-start; 
@@ -602,11 +729,12 @@ summary {
                             height: 65vh; /* Altura máxima do modal */
                             padding: 10px; /* Espaçamento interno */
                         }
-                      
+                            
                         .display-modal{
                           display: flex;
                           justify-content: center;
                           align-items: center;
+                          flex-direction: row;
                           width: 100vw;
                         }
                         .modal img {
@@ -630,25 +758,6 @@ summary {
                             border-radius: 20px;
                             height: 100%;
                         }
-                        
-                        /* Estilização do scroll */
-                        .modal::-webkit-scrollbar {
-                            width: 10px; /* Largura do scroll vertical */
-                        }
-                        
-                        .modal::-webkit-scrollbar-track {
-                            background-color: #333; /* Cor de fundo da barra de scroll */
-                        }
-                        
-                        .modal::-webkit-scrollbar-thumb {
-                            background-color: #ec8de3; /* Cor do thumb (o scroll em si) */
-                            border-radius: 5px; /* Borda arredondada */
-                        }
-                        
-                        .modal::-webkit-scrollbar-thumb:hover {
-                            background-color: #b25ac4; /* Cor do thumb ao passar o mouse */
-                        }
-                        
         .btn-2{
             width: 27%;
             height: 0;
@@ -659,9 +768,88 @@ summary {
             box-shadow: -1px -1px 30px #5AAD26;
             text-shadow: 1px 2px 4px black;
         }
+        
+                /* PERGUNTAS */
+
+                .perguntas{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: var(--preto-padrao);
+                    padding-bottom: 12vh;
+                    
+                }
+                
+                .perguntas h2{
+                    color: var(--rosa-font);
+                    border-bottom: 1px solid #D47ECC;
+                    width: 25vw;
+                    padding: 1vw;
+                    align-self: self-start;
+                    font-size: 2vw;
+                }
+                summary {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    padding: 1vw;
+                    font-weight: 500;
+                    font-size: 1.5vw;
+                    border-bottom: 1px solid white; 
+                   
+                
+                }
+                .caixa-respostas{
+                    display: flex;
+                    background-color: var(--rosa-font);
+                    width: 100%;
+                    color: var(--preto-padrao);
+                    font-weight: 500;
+                }
+                
+                .caixa-respostas p{
+                    padding: 4vh;
+                    font-size: 1.3vw;
+                }
+                .caixa-perguntas{
+                    background-color: var(--preto-padrao);
+                    padding: 0;
+                    margin: 0;
+                    
+                }
+                    /* RODAPÉ */
+        footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            padding-bottom: 5vh;
+        }
+        .area-footer{
+            display: flex;
+            width: 80%;
+
+        }
+        .footer-direito{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            width: 50%;
+        }
+        .footer-esquerdo{
+            width: 50%;
+        }
         footer p{
             font-size: 1.1vw;
             font-weight: 300;
+        }
+        .area-footer span{
+
+            font-weight: 500;
+            color: var(--rosa-font);
         }
     }
 
