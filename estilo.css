@@ -17,14 +17,6 @@ body, html {
 
 /* CARROSSEL */
 
-.topo {
-    /*position: relative;
-    width: 100%;
-    height: 100%;  Altura total da viewport */
-    /* background-color: #ccc; Cor de fundo para visualização */
-    /* overflow: hidden; Oculta conteúdo além das bordas */
-}
-
 .topo{
 
     width: 100%;
@@ -52,105 +44,6 @@ body, html {
 }
 .topo span{
     color: var(--rosa-font);
-}
-.container-slider {
-    position: relative;
-    width: 100%;
-    height: 100%; /* Ocupa toda a altura da .topo */
-}
-
-.background-slider {
-    position: relative;
-    width: 100%;
-    height: 100%; /* Ocupa toda a altura da .topo */
-    overflow: hidden; /* Oculta conteúdo além das bordas */
-}
-
-.background-slider::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto levemente opaco */
-}
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.719); /* Fundo preto levemente opaco */
-    z-index: 1; /* Coloca o fundo sobre as imagens */
-}
-
-.slider {
-    display: flex;
-    width: auto;
-    height: 100%; 
-    max-height: 80vh;
-}
-
-.slider img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajusta a imagem ao tamanho do contêiner */
-}
-
-.background-slider h2 {
-    position: absolute;
-    top: 15%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    color: white;
-    z-index: 1; /* Garante que o texto fique acima das imagens */
-    font-weight: 400;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.445);
-    font-size: 1vw;
-    border: 1px solid red;
-    padding: 5%;
-}
-
-.caixa-texto{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-    border: 4px solid rgb(0, 255, 55);
-}
-.background-slider span{
-
-    color: var(--rosa-font) ;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.445);
-}
-
-.btn{
-    position: absolute;
-    top: 70%;
-    left: 19%;
-    width: 60%;
-    text-align: center;
-    margin: 0;
-    color: white;
-    z-index: 1; /* Garante que o texto fique acima das imagens */
-    font-weight: 400;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.445);
-    box-shadow: -1px -1px 20px #5AAD26;
-    border-radius: 10px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    background: linear-gradient(to bottom, #5AAD26, #0C1E0D);
-    padding: 2%;
-    cursor: pointer;
-    
 }
 
 .btn-2{
@@ -239,15 +132,20 @@ footer{
     flex-direction: column;
     margin: 0;
     padding: 0;
-    
-    
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+footer a:hover{
+
+    color: gray;
 
 }
 .area-footer{
     display: flex;
     width: 80%;
-    
-
 }
 .footer-direito{
     display: flex;
@@ -264,9 +162,29 @@ footer p{
     font-weight: 300;
 }
 .area-footer span{
-
     font-weight: 500;
     color: var(--rosa-font);
+}
+
+.orcamento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+.orcamento h2{
+
+padding-left: 1vw;
+border-bottom: 2px solid #D47ECC;
+width: 40%;
+font-size: 5vw;
+}
+.orcamento p{
+    padding-left: 1vw;
+    font-size: 3.6vw;
+    padding-bottom: 4vh;
 }
 
 @media (max-width: 767px) {
@@ -280,44 +198,8 @@ footer p{
         align-items: center;
        
     }
-    .background-slider{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .background-slider h2{
-        position: absolute;
-        top: 15%;
-        left: 15;
-        width: 100%;
-        text-align: center;
-        margin: 0;
-        color: white;
-        z-index: 1; /* Garante que o texto fique acima das imagens */
-        font-weight: 400;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.445);
-        font-size: 7vw;
-    }
-
-    .btn{
-        width: 60%;
-        text-align: center;
-        margin: 5% 0;
-        color: white;
-        font-weight: 400;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.445);
-        box-shadow: -1px -1px 20px #5AAD26;
-        border-radius: 10px;
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        background: linear-gradient(to bottom, #5AAD26, #0C1E0D);
-        padding: 2%;
-        cursor: pointer;
-    }
    
+ 
     .areaburguer{
         width: 10%;
         margin: 1%;
@@ -478,10 +360,6 @@ footer p{
     font-weight: 450;
 }
 
-.slider-2 img{
-    display: flex;
-}
-
         .icon{
             width: 3vw;
         }
@@ -502,27 +380,8 @@ footer p{
             font-size: x-large;
             
         }
-        .content-slider-2 {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-           
-        }
-        
-        .slider-2 {
-            display: flex;
-            transition: transform 0.5s ease;
-            
-            width: 100%;
-        }
-        
-        .slider-2 img {
-            border: 1px solid red;
-            margin: 0 50px;
-            width: 100%;
-            height: auto;
-            object-fit: cover; /* Para cobrir o espaço sem distorcer a imagem */
-        }
+    
+
         
         button {
             position: absolute;
@@ -542,7 +401,13 @@ footer p{
         justify-content: center;
         align-items: center;
         background-color: var(--rodape);
+        text-decoration: none;
        
+    }
+    footer p {
+        text-decoration: none;
+        list-style: none;
+        color: white;
     }
 
             /* MODAL */
@@ -700,9 +565,9 @@ footer p{
             
             
         }
-    
-       
+
             /* COMO FUNCIONA */
+
         .topo h2{
             font-size: 5vw;
         }
@@ -899,7 +764,6 @@ footer p{
         .area-footer{
             display: flex;
             width: 80%;
-
         }
         .footer-direito{
             display: flex;
@@ -932,6 +796,29 @@ footer p{
     .xx-degrade{
         display: none;
     }
+
+    /* ORÇAMENTO*/
+    .orcamento{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .orcamento h2{
+    align-self: flex-start;    
+    color: var(--rosa-font);
+    padding-left: 1vw;
+    border-bottom: 2px solid #D47ECC;
+    font-size: 2.5vw;
+    }
+    .orcamento p{
+        padding-left: 1vw;
+        font-size: 1.2vw;
+        padding-bottom: 10vh;
+        padding-top: 4vh;
+    }
+
 
     }
 
