@@ -23,7 +23,9 @@
         <div class="menu-burguer">
            <nav class="mobile">
             <li>
-                <a href=""><img style="width: 35%; padding-top: 1%; padding-left: 3%;" src="/src/logo/logo-vertical.png" alt=""></a>
+                <a href="">
+                <img style="width: 35%; padding-top: 1%; padding-left: 3%;" src="/src/logo/logo-vertical.png" alt="logo">
+            </a>
             </li>
             <div onclick="toggleMenu()" class="areaburguer" >
                 <div class="barra"></div>
@@ -43,7 +45,7 @@
         <nav class="desktop">
             <ul>
                 <li>
-
+                    <a href="#"><img class="logo" src="/src/logo/logo-vertical.png" alt=""></a>
                 </li>
                 <li>
                     <a href="#quem-somos">Quem Somos</a>
@@ -62,9 +64,11 @@
                             <img src="/src/imagens/image-2.jpg" alt="">
                             <img src="/src/imagens/image-3.jpg" alt="">
                         </div>
+                       <div class="caixa-texto" >
                         <h2>
-                           <span>Transforme</span> seu ambiente com <span>profissionalismo</span> e <span>sofisticação</span></h2>
-                        </div>
+                            <span>Transforme</span> seu ambiente com <span>profissionalismo</span> e <span>sofisticação</span></h2>
+                         </div>
+                       </div>
                         <div class="area-btn">
                             <a class="btn" href="#"> faça o seu orçamento</a>
                         </div>
@@ -73,38 +77,44 @@
             </section>
             <section id="como-funciona" class="como-funciona">
                 <h2 class="title">como funciona</h2>
-                <article class="area">
-                    <img src="/src//icons/envio.png" alt="logo-envio">
-                    <h2>
-                        Solicite seu Orçamento Personalizado
-                    </h2>
-                    <p>
-                        Nos informe a medida desejada para o projeto, o CEP de 
-                        entrega e envie a identidade visual da marca para 
-                        receber um orçamento personalizado.
-                    </p>
-                </article>
-                <article class="area">
-                    <img src="/src/icons/prazo.png" alt="logo-conograma">
-                    <h2>
-                        Início do Cronograma de Criação e Produção
-                    </h2>
-                    <p>
-                    Após fechado o projeto, é dado início ao cronograma de criação
-                    do layout e produção do produto. 
-                    </p>
-                </article>
-                <article class="area end">
-                    <img src="/src/icons/post-branco.png" alt="logo-entrega">
-                    <h2>
-                    Envio Seguro e Confortável
-                    </h2>
-                    <p>
-                    Os pedidos são entregues via sedex ou por transportadora 
-                    de nossa região, considerando as condições de tempo de 
-                    entrega e valores disponibilizados para o envio.
-                    </p>
-                </article>
+                <div class="caixa-desktop">
+                    <article class="area">
+                        <img src="/src//icons/envio.png" alt="logo-envio">
+                        <h2>
+                            Solicite seu Orçamento Personalizado
+                        </h2>
+                        <p>
+                            Nos informe a medida desejada para o projeto, o CEP de 
+                            entrega e envie a identidade visual da marca para 
+                            receber um orçamento personalizado.
+                        </p>
+                    </article>
+                    <article class="area " >
+                        <img src="/src/icons/prazo.png" alt="logo-conograma">
+                        <h2>
+                            Início do Cronograma de Criação e Produção
+                        </h2>
+                        <p > 
+                        Após fechado o projeto, é dado início ao cronograma de criação
+                        do layout e produção do produto. 
+                        </p>
+                    </article>
+                    <article class="area ">
+                        <img src="/src/icons/post-branco.png" alt="logo-entrega">
+                        <h2>
+                        Envio Seguro e Confortável
+                        </h2>
+                        <p class="text-end">
+                            Entregamos pedidos via Sedex ou transportadora local, com base em tempo e custos de envio."
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <section class="envio">
+                
+                <div class="caixa-degrade">
+                    <p>Envio para todo o Brasil e parcelamento em até 12x</p>   
+                </div>
             </section>
             <section id="quem-somos" class="quem-somos">
                 <h2>
@@ -124,20 +134,74 @@
                 </p>
             </section>
             <section id="servicos" class="servicos">
-                <h2>NOSSOS SERVIÇOS</h2>
-                <div class="content-slider-2">
-                    <div class="slider-2"> 
-                        <img  src="/src/trabalhos/foto1.png" alt="">
-                        <img src="/src/trabalhos/foto2.png" alt="">
-                        <img src="/src/trabalhos/foto3.png" alt="">
-                        <img src="/src/trabalhos/foto4.png" alt="">
-                        <img src="/src/trabalhos/foto5.png" alt="">
-                        <img src="/src/trabalhos/foto6.png" alt="">
+                <h2>
+                    CONHEÇA ALGUNS DOS NOSSOS TRABALHOS
+                </h2>
+                <div class="content-modal">
+
+                    <div class="display-modal">
+                            <div class="display">
+                                <img id="imagemGrande" class="imagemgrand"  src="/src/trabalhos/foto1.png" alt="">
+                            </div>
+                            <div class="modal">
+                                <img onclick="changeImage('/src/trabalhos/foto1.png')" src="/src/trabalhos/foto1.png" alt="">
+                                <img onclick="changeImage('/src/trabalhos/foto2.png')" src="/src/trabalhos/foto2.png" alt="">
+                                <img onclick="changeImage('/src/trabalhos/foto3.png')" src="/src/trabalhos/foto3.png" alt="">
+                                <img onclick="changeImage('/src/trabalhos/foto4.png')" src="/src/trabalhos/foto4.png" alt="">
+                                <img onclick="changeImage('/src/trabalhos/foto5.png')" src="/src/trabalhos/foto5.png" alt="">
+                                <img onclick="changeImage('/src/trabalhos/foto6.png')" src="/src/trabalhos/foto6.png" alt="">
+                            </div>
                     </div>
-                </div>
+                        
+                            <script src="modal.js"></script>
+                    
                 <a class="btn-2" href="#"> faça o seu orçamento</a>
             </section>
-            <script src="slider-2.js"></script>
+            <section class="perguntas">
+                <h2>Perguntas Frequentes</h2>
+                <div class="caixa-perguntas">
+                    <details>
+                        <summary >Sobre o orçamento:</summary>
+                        <div class="caixa-respostas">
+                            <p>
+                                Nossos orçamentos são personalizados e variam de 
+                                acordo com a proporção desejada para o projeto e 
+                                o frete para a região em questão, podendo ser 
+                                feito o pagamento dos produtos via pix, cartão de 
+                                crédito, e dinheiro.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Sobre a personalização:</summary>
+                        <div class="caixa-respostas" >
+                            <p>
+                                Disponibilizamos diversas cores de acrílico cast 
+                                e espelhado, podendo expandir ainda mais as 
+                                possibilidades através da pintura feita diretamente 
+                                no material, aumentando assim a variedade de tons 
+                                e mantendo o brilho do material.   
+                            </p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Sobre o material:</summary>
+                        <div class="caixa-respostas" >
+                            <p>
+                                Trabalhamos com acrílico de alta qualidade, 
+                                adquirido diretamente com os melhores fornecedores 
+                                do país, lidamos com acrílico de 2, 3, 4 e 5 milímetros, 
+                                podendo também efetuar trabalhos com outras 
+                                espessuras a depender do desejo e da demanda do pedido.  
+                            </p>
+                        </div>
+                    </details>
+
+                </div>
+            </section>
+
         </main>
         <footer>
             <p class="rodape">
