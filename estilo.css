@@ -28,7 +28,6 @@ body, html {
 .topo{
 
     width: 100%;
-    height: 50vh;
     background-image: url(/src/imagens/topo.png);
     background-size:cover;
     display: flex;
@@ -45,7 +44,7 @@ body, html {
 
 }
 .topo h2{
-    padding-top: 5%;
+    
     text-align: center;
     width: 90%;
     color: #fff;
@@ -367,7 +366,7 @@ footer p{
     align-items: center;
     flex-direction: column;
     background-position:bottom  ;
-    height: 60vh;
+    
 }
 .caixa-topo{
     width: 80%;
@@ -630,6 +629,15 @@ footer p{
         font-weight: 100;
         width: 80%;
     }
+    /*degradê preto*/
+
+    .degrade-preto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-image: linear-gradient(to bottom, transparent, #0E0D0D);
+    }
 
     @media (min-width: 770px){
 
@@ -676,9 +684,7 @@ footer p{
             
         }
     
-        .topo{
-            height: 45vw;
-        }
+       
             /* COMO FUNCIONA */
         .topo h2{
             font-size: 5vw;
@@ -898,6 +904,17 @@ footer p{
             font-weight: 500;
             color: var(--rosa-font);
         }
+    /*DEGRADE PRETO*/
+
+    .degrade-preto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-image: linear-gradient(to bottom, transparent, #0E0D0D);
+      
+    }
+    
     }
 
     
