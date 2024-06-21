@@ -166,26 +166,6 @@ footer p{
     color: var(--rosa-font);
 }
 
-.orcamento{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-
-}
-.orcamento h2{
-
-padding-left: 1vw;
-border-bottom: 2px solid #D47ECC;
-width: 40%;
-font-size: 5vw;
-}
-.orcamento p{
-    padding-left: 1vw;
-    font-size: 3.6vw;
-    padding-bottom: 4vh;
-}
 
 @media (max-width: 767px) {
 
@@ -603,7 +583,8 @@ font-size: 5vw;
         }
         .como-funciona h2{
             padding-top: 4vh;
-            font-size: 1.6vw;
+            font-size: 1.3vw;
+           
         }
         .como-funciona p{
             font-size: 1.1vw;
@@ -798,26 +779,17 @@ font-size: 5vw;
     }
 
     /* ORÇAMENTO*/
-    .orcamento{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-    }
-    .orcamento h2{
-    align-self: flex-start;    
-    color: var(--rosa-font);
-    padding-left: 1vw;
-    border-bottom: 2px solid #D47ECC;
-    font-size: 2.5vw;
-    }
-    .orcamento p{
-        padding-left: 1vw;
+
+    .area .orcamento-h2{
+
         font-size: 1.2vw;
-        padding-bottom: 10vh;
-        padding-top: 4vh;
+    
     }
+    .area .orcamento{
+        font-size: 0.9vw;
+        
+    }
+    
 
 
     }
