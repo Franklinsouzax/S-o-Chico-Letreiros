@@ -367,6 +367,7 @@ footer p{
     align-items: center;
     flex-direction: column;
     background-position:bottom  ;
+    height: 60vh;
 }
 .caixa-topo{
     width: 80%;
@@ -378,9 +379,9 @@ footer p{
 .topo h2{
     padding-top: 5%;
     text-align: center;
-    width: 90%;
+    width: 95%;
     color: #fff;
-    font-size: 5vw;
+    font-size: 6vw;
 }
 .topo span{
     color: var(--rosa-font);
@@ -598,6 +599,10 @@ footer p{
                 border-radius: 20px;
                 height: 100%;
             }
+
+            .imagemgrand{
+                width: 100%;
+            }
             
             /* Estilização do scroll */
             .modal::-webkit-scrollbar {
@@ -671,8 +676,16 @@ footer p{
             
         }
     
+        .topo{
+            height: 45vw;
+        }
             /* COMO FUNCIONA */
-
+        .topo h2{
+            font-size: 5vw;
+        }
+        .btn-2{
+            margin-bottom: 10%;
+        }
         .como-funciona{
             display: flex;
             justify-content: center;
