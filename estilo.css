@@ -20,7 +20,7 @@ body, html {
 .topo{
 
     width: 100%;
-    background-image: url(/src/imagens/topo.png);
+    background-image: url(/src/imagens/topo4.png);
     background-size:cover;
     display: flex;
     justify-content: center;
@@ -39,7 +39,6 @@ body, html {
     
     text-align: center;
     width: 100%;
-    color: #fff;
     font-size: 8vw;
 }
 .topo span{
@@ -221,7 +220,6 @@ footer p{
 .topo{
 
     width: 100%;
-    background-image: url(/src/imagens/topo.png);
     background-size:cover;
     display: flex;
     justify-content: center;
@@ -235,18 +233,17 @@ footer p{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.281);
 
 }
 .topo h2{
     padding-top: 5%;
     text-align: center;
     width: 95%;
-    color: #fff;
+    color: white;
     font-size: 6vw;
 }
-.topo span{
-    color: var(--rosa-font);
-}
+
 
 .como-funciona .title{
     font-size: x-large;
